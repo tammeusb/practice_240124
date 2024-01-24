@@ -38,3 +38,14 @@ a:hover {
     margin: 30px 20px;
     height: 300px;
 }
+
+.rockMessage {
+    font-style: italic;
+    margin: 30px;
+    color:palevioletred;
+    text-shadow: rgb(151, 148, 148) 2px 2px 5px;
+}
+
+footer {
+    padding: 10px;
+}
