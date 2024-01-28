@@ -2,14 +2,22 @@ const hertzInputOne = document.querySelector(".freq-one");
 const hertzInputTwo = document.querySelector(".freq-two");
 const hertzInputThree = document.querySelector(".freq-three");
 
+hertzInputOne.addEventListener("input", () => 
+    hertzInputOne.value > 100
+    ? colorHertzOne("purple", "white")
+    : colorHertzOne("white", "black")
+); 
+
+function colorHertzOne(bgColor, textColor) {
+    hertzInputOne.style.backgroundColor = bgColor;
+    hertzInputOne.style.color = textColor;
+}
+
 const button = document.querySelector(".merge");
 
 const log = document.querySelector(".log");
 
 button.addEventListener("click", mergeHertz);
-
-// hertzInputThree.addEventListener("input", mergeHertz); 
-// save this event listener to change bg color of fields? 
 
 function mergeHertz() {
 
