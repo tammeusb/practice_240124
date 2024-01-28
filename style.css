@@ -58,3 +58,15 @@ img {
 footer {
     padding: 10px;
 }
+
+label {
+    margin-right: 10px;
+}
+
+input {
+    margin: 20px 0;
+}
+
+.merge {
+    margin-top: 20px;
+}
